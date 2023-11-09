@@ -1,4 +1,4 @@
-body {
+.body {
   margin: 0;
   font-family: Helvetica, sans-serif;
   background: #d9d9d9;
@@ -68,6 +68,20 @@ body {
 .tagline h1 {
   font-size: 28px;
   color: #333;
+}
+
+.leg{
+  font-size: 28px;
+  color: #000;
+  text-align: left;
+  font-family: Helvetica, sans-serif;
+}
+
+.paragrafo{
+  font-size: 18px;
+  color: #000;
+  text-align: left;
+  font-family: Helvetica, sans-serif;
 }
 
 .search-bar {
