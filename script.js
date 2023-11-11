@@ -22,6 +22,7 @@ function initMap() {
         title: 'Sua Localização'
       });
 
+      
       // Realiza uma busca por delegacias próximas
       var request = {
         location: userLocation,
@@ -34,7 +35,7 @@ function initMap() {
       service.nearbySearch(request, function(results, status) {
         if (status == google.maps.places.PlacesServiceStatus.OK) {
           for (var i = 0; i < results.length; i++) {
-            createMarker(results[i]);
+            createMarker(results[i].geometry.location, map);
           }
         }
       });
@@ -42,6 +43,14 @@ function initMap() {
   } else {
     console.log("Geolocalização não é suportada pelo seu navegador.");
   }
+}
+
+function createMarker(position, map) {
+
+  new google.maps.Marker({
+      position: position,
+      map: map
+  });
 }
 
 // Chama a função initMap imediatamente após a carga da página

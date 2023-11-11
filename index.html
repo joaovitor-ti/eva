@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Sua Página</title>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmF0Unk0vt8_lxXkfDhqsPD1t0OCwnWQ0&callback=initMap" async defer></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
 
 
 </head>
@@ -37,7 +38,8 @@
   <!-- ... Código anterior ... -->
 
   <div class="location-image" id="map-container">
-    <!-- O mapa será inserido aqui via JavaScript -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3mmbjA-RHN4FjLjYf7v_HVdcP52gjin8&callback=initMap&libraries=places" async defer></script>
+    
   </div>
 
 <!-- ... Restante do código ... -->
