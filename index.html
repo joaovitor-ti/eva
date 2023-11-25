@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="body">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Sua Página</title>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmF0Unk0vt8_lxXkfDhqsPD1t0OCwnWQ0&callback=initMap" async defer></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 
 </head>
@@ -15,30 +17,29 @@
     <header class="navbar">
       <div class="logo">EVA</div>
       <nav class="menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Apoio</a></li>
-          <li><a href="#">Legislação</a></li>
+        <ul class="menu">
+          <li ><a href="index.html">Home</a></li>
+          <li><a href="Apoio.html">Apoio</a></li>
+          <li><a href="legislacao.html">Legislação</a></li>
         </ul>
       </nav>
-      <button class="sos-btn">SOS</button>
+        <a href="https://shopee.com.br/?gad_source=1&gclid=CjwKCAiAu9yqBhBmEiwAHTx5pwJk_38XVbJ0P9l_
+        hLVjpCkwbOJ2As6AJtAQMQoQciXGoYM2th2UqxoCYvsQAvD_BwE" class="sos-btn">SOS</a>
     </header>
   </div>
 
   <div class="main-content">
-    <div class="tagline">
+    <div class="titulo">
       <h1>Encontre Ajuda Rápido</h1>
-    </div>
-    <div class="search-bar">
-      <input type="text" placeholder="Pesquise pela delegacia da mulher mais próxima" class="search-input">
-      
     </div>
    <!-- ... Código anterior ... -->
 
   <!-- ... Código anterior ... -->
 
   <div class="location-image" id="map-container">
-    <!-- O mapa será inserido aqui via JavaScript -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3mmbjA-RHN4FjLjYf7v_HVdcP52gjin8&c
+    <!--  -->allback=initMap&libraries=places" async defer></script>
+    
   </div>
 
 <!-- ... Restante do código ... -->
